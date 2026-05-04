@@ -1,0 +1,600 @@
+@font-face {
+    font-family: 'ZtgathaBold';
+    src: url('../fonts/ZtgathaBold.eot');
+    src: url('../fonts/ZtgathaBold.eot') format('embedded-opentype'),
+         url('../fonts/ZtgathaBold.woff2') format('woff2'),
+         url('../fonts/ZtgathaBold.woff') format('woff'),
+         url('../fonts/ZtgathaBold.ttf') format('truetype'),
+         url('../fonts/ZtgathaBold.svg#ZtgathaBold') format('svg');
+}
+
+@font-face {
+    font-family: 'ZTGathaSemiBold';
+    src: url('../fonts/ZTGathaSemiBold.eot');
+    src: url('../fonts/ZTGathaSemiBold.eot') format('embedded-opentype'),
+         url('../fonts/ZTGathaSemiBold.woff2') format('woff2'),
+         url('../fonts/ZTGathaSemiBold.woff') format('woff'),
+         url('../fonts/ZTGathaSemiBold.ttf') format('truetype'),
+         url('../fonts/ZTGathaSemiBold.svg#ZTGathaSemiBold') format('svg');
+}
+
+/* CSS Reset & Variables */
+:root {
+  --drupal-blue: #009cde;
+  --drupal-dark-blue: #006aa9;
+  --drupal-navy: #12285f;
+  --drupal-dark-navy: #091942;
+  --drupal-light-blue: #ccedf9;
+  --drupal-black: #000;
+  --drupal-white: #fff;
+  --drupal-purple: #ccbaf4;
+  --drupal-yellow: #ffc423;
+  --drupal-red: #f46351;
+  --drupal-dark-red: #c63c00;
+  --drupal-green: #397618;
+  --drupal-gray-darkest: #1f2420;
+  --drupal-gray-darker: #323946;
+  --drupal-gray-dark: #4f5661;
+  --drupal-gray-default: #6d7583;
+  --drupal-gray-mild: #a2acbe;
+  --drupal-gray-milder: #cfd4dd;
+  --drupal-gray-mildest: #f8f9fc;
+  --drupal-gray-pale: #e7ebf3;
+  --drupal-gray-disabled: #e7ebf3;
+  --drupal-soft-white: #f0f3fa;
+  --color-absolutezero: #003ecc;
+  --color-maximumred: #dc2323;
+  --color-maximumred-hover: #c61f1f;
+  --color-maximumred-active: #b01c1c;
+  --color-focus: var(--drupal-purple);
+  --color-white: var(--drupal-white);
+  --color-credited-bg: #e1f6d5;
+  --color-not-credited-bg: var(--drupal-gray-mildest);
+  --certified-diamond: #4EC8FC;
+  --certified-top-tier: #CCBAF4;
+  --certified-platinum: #4EC8FC;
+  --certified-gold: #FFEF5C;
+  --certified-silver: #D1D1D1;
+  --certified-bronze: #F2CF8B;
+}
+
+:root {
+  --text-main: var(--drupal-navy);
+}
+
+:root {
+  --blue-striped-gradient: repeating-linear-gradient(45deg,rgba(0,156,222,0.5),rgba(0,156,222,0.5) 12px,rgba(204,237,249,1) 12px,rgba(204,237,249,1) 58px);
+  --purple-gradient: linear-gradient(270deg,var(--drupal-purple) -0.5%,#22a5e5 100.62%);
+  --red-yellow-gradient: linear-gradient(270deg,var(--drupal-red) -0.5%,var(--drupal-yellow) 100.62%);
+  --red-purple-gradient: linear-gradient(270deg,var(--drupal-purple),var(--drupal-red));
+  --blue-purple-gradient: linear-gradient(270deg,var(--drupal-purple),var(--drupal-blue));
+  --blue-yellow-gradient: linear-gradient(270deg,var(--drupal-yellow),var(--drupal-light-blue));
+  --blue-nay-drupal-blue-gradient-horizontal: linear-gradient(90deg,var(--drupal-navy),var(--drupal-blue));
+  --blue-nay-drupal-blue-gradient-vertical: linear-gradient(180deg,var(--drupal-navy),var(--drupal-blue));
+}
+
+:root {
+  --larger-header: "ZtgathaBold","Noto Sans",system-ui,sans-serif;
+  --smaller-header: "Noto Sans",system-ui,sans-serif;
+  --sans: "Noto Sans",system-ui,sans-serif;
+  --body: var(--sans);
+  --code: sourcecodepro,monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body);
+  color: var(--text-main);
+  background-color: var(--drupal-white);
+  line-height: 1.6;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1503px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- HEADER --- */
+header {
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.05);
+  background-color: #fff;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  position: absolute;
+  width: calc(100% - 40px);
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  border-radius: 10px;
+  z-index: 99;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.logo {
+  width: 142px;
+  margin-right: 12px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 12px;
+  color: var(--drupal-navy);
+  font-weight: 700;
+  padding: 8px 0;
+  letter-spacing: 1.5px;
+  display: block;
+}
+
+.nav-links a:hover {
+  color: var(--drupal-blue);
+}
+
+.nav-links .support-btn {
+  border: 1px solid var(--drupal-navy);
+  padding: 8px 16px;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+  line-height: 14px;
+}
+
+.nav-links .support-btn::after {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  content: "";
+  background-image: url(../images/heart-duotone.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-actions a:not(.btn-get-started) {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-actions a:not(.btn-get-started) i {
+  font-size: 28px;
+}
+
+.btn-get-started {
+  background-color: var(--drupal-navy);
+  color: var(--drupal-white);
+  border: 3px solid var(--drupal-navy);
+  padding: 13px 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.btn-get-started:hover {
+  background-color: transparent;
+  color: var(--drupal-navy);
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  background: var(--blue-nay-drupal-blue-gradient-horizontal);
+  color: #fff;
+  padding: 230px 5% 140px 5%;
+  text-align: left;
+  position: relative;
+}
+
+.hero::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url(../images/background-pattern--gingham.svg);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 20px;
+  font-family: var(--larger-header);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.hero p {
+  font-size: 28px;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.hero-action {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero-action .btn-white {
+  color: var(--drupal-navy);
+  border: solid 3px var(--drupal-navy);
+  background-color: var(--drupal-white);
+  width: fit-content;
+  padding: 13px 17px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1rem;
+}
+
+.hero-action .btn-white:hover {
+  color: var(--drupal-white);
+  background-color: var(--drupal-navy);
+}
+
+/* --- MAIN SECTION --- */
+.main {
+  background-color: var(--drupal-gray-pale);
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* --- FILTER SECTION --- */
+.filters {
+  margin: 2rem 0px;
+  padding: 1rem 1rem 2rem 1rem;
+  border: 1px solid var(--drupal-navy);
+  border-radius: 10px;
+  background: var(--drupal-gray-mildest);
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  max-width: 295.5px;
+}
+
+.form-group:has(select) {
+  max-width: 198.5px;
+}
+
+.form-group label {
+  display: table;
+  margin: 4px 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  font-family: var(--larger-header);
+}
+
+.form-group input,
+.form-group select {
+  padding: 11px 15px;
+  border: 1px solid var(--drupal-gray-mild);
+  border-radius: 6px;
+  font-family: inherit;
+  font-family: var(--body);
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 48px;
+  line-height: 24px;
+}
+
+.btn-apply {
+  display: inline-block;
+  width: fit-content;
+  padding: 13px 17px;
+  cursor: pointer;
+  color: var(--drupal-navy);
+  border: 3px solid var(--drupal-light-blue);
+  border-radius: 6px;
+  background-color: var(--drupal-light-blue);
+  font-family: var(--body);
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1rem;
+}
+
+.btn-apply:hover {
+  text-decoration: none;
+  color: var(--drupal-white);
+  border-color: var(--drupal-navy);
+  background-color: var(--drupal-navy);
+}
+
+/* --- TEMPLATES GRID --- */
+.templates-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(464px, 1fr));
+  gap: 32px;
+}
+
+.card {
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--drupal-white);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 325px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.1;
+  font-family: var(--larger-header);
+}
+
+.card-desc {
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  padding: 8px 15px;
+  border: 1px solid var(--drupal-light-blue);
+  border-radius: 25px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.card-footer {
+  margin-top: 15px;
+  padding-top: 8px;
+  border-top: 1px solid var(--drupal-gray-milder);
+}
+
+/* --- CTA BANNER --- */
+.cta-banner-wrap {
+  background-color: var(--drupal-light-blue);
+  padding: 20px 0;
+}
+
+.cta-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-banner span {
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.cta-banner a {
+  text-decoration: none;
+  color: var(--drupal-navy);
+  padding: 4px 0px;
+  border-bottom: 2px solid var(--drupal-navy);
+  background-color: transparent;
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 150%;
+}
+
+/* --- FOOTER --- */
+footer {
+  display: flex;
+}
+
+.footer-left {
+  display: flex;
+  margin: 0px;
+  padding: 64px 16px 96px 112px;
+  background-color: var(--drupal-navy);
+  gap: 40px;
+  flex-direction: row;
+  width: 66%;
+}
+
+.footer-links {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: var(--drupal-white);
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 160%;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--purple-gradient);
+  width: 34%;
+}
+
+.footer__social-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px 48px;
+  width: fit-content;
+  margin: auto;
+  padding: 0px 1rem;
+  list-style: none;
+}
+
+.footer__social-menu a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  word-wrap: normal;
+}
+
+/* --- BOTTOM BAR --- */
+.footer__secondary-section {
+  display: flex;
+  padding: 2rem 112px;
+  color: var(--drupal-navy);
+  background-color: var(--drupal-light-blue);
+  flex-direction: row;
+}
+
+.footer__sponsorship {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 32px;
+  align-self: center;
+  width: 66%;
+}
+
+.footer__sponsorship-logo {
+  width: fit-content;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.footer__sponsorship-management,
+.footer__sponsorship-support,
+.footer__copyright {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 160%;
+}
+
+.footer__sponsorship-management:hover,
+.footer__sponsorship-support:hover {
+  text-decoration: underline;
+}
+
+.footer__sponsorship-management {
+  grid-column: 2;
+  grid-row: 1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer__sponsorship-support {
+  grid-column: 2;
+  grid-row: 2;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer__sponsorship-support span {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  width: 34%;
+  padding-top: 0;
+  text-align: right;
+}
+
+.footer__copyright  a {
+  text-decoration: underline;
+}
+
+/* Responsive cơ bản */
+@media (max-width: 1024px) {
+  .nav-links { display: none; } /* Giấu menu trên mobile, cần làm menu hamburger thực tế */
+  .filters { flex-direction: column; transform: none; margin: 20px 5%; }
+  .btn-apply { width: 100%; }
+  footer { flex-direction: column; }
+  .footer-left, .footer-right { width: 100%; }
+  .cta-banner { flex-direction: column; gap: 10px; text-align: center; }
+}
