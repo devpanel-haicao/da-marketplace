@@ -73,7 +73,7 @@
             <section class="templates-container">
                 
                 <!-- Card 1 -->
-                <a href="https://www.drupalforge.org/" target="_blank" class="card">
+                <a href="site-template/byte/byte.html" target="_blank" class="card">
                     <img src="./images/site-template/card-1.webp" alt="Byte">
                     <div class="card-body">
                         <h3 class="card-title">Byte</h3>
@@ -87,7 +87,7 @@
                 </a>
 
                 <!-- Card 2 -->
-                <a href="https://www.drupalforge.org/" target="_blank" class="card">
+                <a href="site-template/haven/haven.html" target="_blank" class="card">
                     <img src="./images/site-template/card-2.webp" alt="Haven">
                     <div class="card-body">
                         <h3 class="card-title">Haven</h3>
