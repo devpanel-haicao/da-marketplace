@@ -109,6 +109,31 @@ a {
   color: inherit;
 }
 
+p {
+  margin-bottom: 18px;
+}
+
+ul, ol {
+  margin-block: 0;
+  margin-inline: 1.5rem 0;
+  padding-inline-start: 0;
+  list-style-type: disc;
+  list-style-image: none;
+}
+
+li {
+  margin-block: 0 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+strong {
+  font-weight: 700;
+}
+
 /* --- HEADER --- */
 header {
   box-shadow: 0 2px 10px 0 rgba(0,0,0,0.05);
@@ -509,6 +534,10 @@ footer {
   list-style: none;
 }
 
+.footer__social-menu-item {
+  margin-block: 0;
+}
+
 .footer__social-menu a {
   display: block;
   width: 60px;
@@ -597,4 +626,260 @@ footer {
   footer { flex-direction: column; }
   .footer-left, .footer-right { width: 100%; }
   .cta-banner { flex-direction: column; gap: 10px; text-align: center; }
+}
+
+/* =========================================================
+ *
+ * DETAIL TEMPLATE
+ *
+ ========================================================= */
+
+.template-detail .main {
+  background-color: var(--drupal-white);
+  padding-top: 0;
+}
+
+.page-header {
+  background-color: var(--drupal-light-blue);
+  padding: 106px 0 16px 0;
+}
+
+.breadcrumb {
+  margin-top: 2.75rem;
+  margin-bottom: 80px;
+  padding-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.breadcrumb a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--drupal-navy);
+}
+
+.breadcrumb span:not(:first-child)::before {
+  margin: 0 12px;
+  content: ">";
+}
+
+.section-page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#page-title {
+  color: var(--drupal-navy);
+  font-family: var(--larger-header);
+  font-size: 2.75rem;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 42px;
+}
+
+.page-authors {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: smaller;
+}
+
+.page-authors > span {
+  margin-right: 10px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.page-authors .values {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-authors .values a {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.template-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.template-actions a {
+  border: solid 3px var(--drupal-navy);
+  background-color: var(--drupal-white);
+  width: fit-content;
+  padding: 13px 17px;
+  cursor: pointer;
+  color: var(--drupal-navy);
+  border-radius: 6px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1rem;
+  margin-inline: 0 var(--space-s);
+}
+
+.template-actions a:hover {
+  text-decoration: none;
+  color: var(--drupal-white);
+  border-color: var(--drupal-navy);
+  background-color: var(--drupal-navy);
+}
+
+.template-price {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px 17px;
+}
+
+/* Template main content */
+.block-feature {
+  margin: 25px 0 50px 0;
+}
+
+.block-feature img {
+  display: block;
+  margin: 0 auto;
+  border: 5px solid var(--drupal-navy);
+  border-radius: 15px;
+  box-shadow: 1.5rem 1.5rem var(--drupal-dark-blue);
+}
+
+.main-content-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main-content {
+  max-width: 80%;
+}
+
+/* Sidebar Right */
+.sidebar-right {
+  width: 15%;
+}
+
+.sidebar-right .block-title {
+  font-family: var(--body);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 17px;
+  color: var(--drupal-navy);
+}
+
+.block-tags .values {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block-tags .value {
+  padding: 8px 15px;
+  border: 1px solid var(--drupal-light-blue);
+  border-radius: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+/* Template tab */
+.template-tabs {
+  margin-top: 10px;
+}
+
+.template-tabs .horizontal-tabs {
+  border: 1px solid var(--drupal-light-blue);
+  background: var(--drupal-light-blue);
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 0 1em 0;
+  position: relative;
+}
+
+.horizontal-tabs .horizontal-tabs-list {
+  background: transparent;
+  border: none;
+  width: auto;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  height: auto;
+  clear: both;
+}
+
+.horizontal-tabs .horizontal-tab-button {
+  margin: 0 10px 0 0;
+  background: var(--drupal-white);
+  box-shadow: none;
+  border-radius: 10px;
+  border: 1px solid var(--drupal-navy);
+  padding-top: 0;
+  min-width: 5em;
+  float: left;
+}
+
+.horizontal-tabs .horizontal-tab-button a {
+  display: block;
+  text-decoration: none;
+  padding: 0.6em 1em;
+  position: relative;
+  top: 0;
+  border-radius: 10px;
+}
+
+.horizontal-tabs .horizontal-tab-button a:hover {
+  background: var(--drupal-navy);
+  color: var(--drupal-white);
+}
+
+.horizontal-tabs .horizontal-tab-button.selected {
+  background: var(--drupal-navy);
+  margin-bottom: -1px;
+}
+
+.horizontal-tabs .horizontal-tab-button.selected a {
+  color: var(--drupal-white);
+}
+
+.horizontal-tabs-panes {
+  margin: 24px 0;
+}
+
+.horizontal-tabs-panes .label {
+  font-weight: bold;
+}
+
+/* block creating organizations */
+.block-creating-organizations {
+  margin-bottom: 20px;
+}
+
+.block-creating-organizations .label {
+  font-weight: bold;
+}
+
+.block-creating-organizations .logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.block-creating-organizations .logos img {
+  max-width: 150px;
+  height: auto;
+  max-height: 50px;
+  width: auto;
 }
