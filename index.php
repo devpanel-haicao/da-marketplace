@@ -73,7 +73,7 @@
             <section class="templates-container">
                 
                 <!-- Card 1 -->
-                <a href="site-template/byte/byte.html" target="_blank" class="card">
+                <a href="site-template/byte/" target="_blank" class="card">
                     <img src="./images/site-template/card-1.webp" alt="Byte">
                     <div class="card-body">
                         <h3 class="card-title">Byte</h3>
@@ -87,7 +87,7 @@
                 </a>
 
                 <!-- Card 2 -->
-                <a href="site-template/haven/haven.html" target="_blank" class="card">
+                <a href="site-template/haven/" target="_blank" class="card">
                     <img src="./images/site-template/card-2.webp" alt="Haven">
                     <div class="card-body">
                         <h3 class="card-title">Haven</h3>
@@ -102,7 +102,7 @@
                 </a>
 
                 <!-- Card 3 -->
-                <a href="https://www.drupalforge.org/" target="_blank" class="card">
+                <a href="https://stage.drupalforge.org/template/drupal-cms" target="_blank" class="card">
                     <img src="./images/site-template/card-3.webp" alt="Healthcare">
                     <div class="card-body">
                         <h3 class="card-title">Healthcare</h3>
@@ -116,7 +116,7 @@
                 </a>
 
                 <!-- Card 4 -->
-                <a href="https://www.drupalforge.org/" target="_blank" class="card">
+                <a href="https://stage.drupalforge.org/template/drupal-cms" target="_blank" class="card">
                     <img src="./images/site-template/card-4.webp" alt="Dripyard - Meridian Charter">
                     <div class="card-body">
                         <h3 class="card-title">Dripyard - Meridian Charter</h3>
@@ -130,7 +130,7 @@
                 </a>
 
                 <!-- Card 5 -->
-                <a href="https://www.drupalforge.org/" target="_blank" class="card">
+                <a href="https://stage.drupalforge.org/template/drupal-cms" target="_blank" class="card">
                     <img src="./images/site-template/card-5.webp" alt="Provus EDU">
                     <div class="card-body">
                         <h3 class="card-title">Provus EDU</h3>
@@ -143,7 +143,7 @@
                 </a>
 
                 <!-- Card 6 -->
-                <a href="https://www.drupalforge.org/" target="_blank" class="card">
+                <a href="https://stage.drupalforge.org/template/drupal-cms" target="_blank" class="card">
                     <img src="./images/site-template/card-6.webp" alt="CareSphere - Non-Profit / NGO Website Template">
                     <div class="card-body">
                         <h3 class="card-title">CareSphere - Non-Profit / NGO Website Template</h3>
@@ -156,7 +156,7 @@
                 </a>
 
                 <!-- Card 7 -->
-                <a href="https://www.drupalforge.org/" target="_blank" class="card">
+                <a href="https://stage.drupalforge.org/template/drupal-cms" target="_blank" class="card">
                     <img src="./images/site-template/card-7.webp" alt="Morpht - Convivial Gov">
                     <div class="card-body">
                         <h3 class="card-title">Morpht - Convivial Gov</h3>
@@ -170,7 +170,7 @@
                 </a>
 
                 <!-- Card 8 -->
-                <a href="https://www.drupalforge.org/" target="_blank" class="card">
+                <a href="https://stage.drupalforge.org/template/drupal-cms" target="_blank" class="card">
                     <img src="./images/site-template/card-8.webp" alt="Pulse – Healthcare & Content Platform Site Template">
                     <div class="card-body">
                         <h3 class="card-title">Pulse – Healthcare & Content Platform Site Template</h3>
@@ -184,7 +184,7 @@
                 </a>
 
                 <!-- Card 9 -->
-                <a href="https://www.drupalforge.org/" target="_blank" class="card">
+                <a href="https://stage.drupalforge.org/template/drupal-cms" target="_blank" class="card">
                     <img src="./images/site-template/card-9.webp" alt="Archimedes">
                     <div class="card-body">
                         <h3 class="card-title">Archimedes</h3>
@@ -197,7 +197,7 @@
                 </a>
 
                 <!-- Card 10 -->
-                <a href="https://www.drupalforge.org/" target="_blank" class="card">
+                <a href="https://stage.drupalforge.org/template/drupal-cms" target="_blank" class="card">
                     <img src="./images/site-template/card-10.webp" alt="Local">
                     <div class="card-body">
                         <h3 class="card-title">Local</h3>
@@ -211,7 +211,7 @@
                 </a>
 
                 <!-- Card 11 -->
-                <a href="https://www.drupalforge.org/" target="_blank" class="card">
+                <a href="https://stage.drupalforge.org/template/drupal-cms" target="_blank" class="card">
                     <img src="./images/site-template/card-11.webp" alt="Convene - Event / Conference Marketing Site Template">
                     <div class="card-body">
                         <h3 class="card-title">Convene - Event / Conference Marketing Site Template</h3>
