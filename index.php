@@ -82,7 +82,7 @@
                             <span class="tag">Education</span>
                             <span class="tag">Events</span>
                         </div>
-                        <div class="card-footer">$899.00</div>zz
+                        <div class="card-footer">Free</div>
                     </div>
                 </a>
 

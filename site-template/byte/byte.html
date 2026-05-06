@@ -60,8 +60,8 @@
                 </div>
               </div>
               <div class="template-actions">
-                <a href="https://www.drupalforge.org/template/drupal-byte" class="template-launch"><i class="fa-solid fa-download"></i> Express Launch</a>
-                <a href="https://dev-9be14008-06bdfb2a-mjp37enj.devpanel.app/" class="template-preview">Preview</a>
+                <a href="https://stage.drupalforge.org/template/drupal-cms" class="template-launch"><i class="fa-solid fa-download"></i> Express Launch</a>
+                <a href="https://1-x-sto8008tjs6iflsxj7xdugohlnxgmecq.tugboatqa.com/" class="template-preview">Preview</a>
                 <span class="template-price">Free</span>
               </div>
             </div>
