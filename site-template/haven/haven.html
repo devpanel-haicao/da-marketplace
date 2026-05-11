@@ -64,7 +64,7 @@
                 </div>
               </div>
               <div class="template-actions">
-                <a href="https://stage.drupalforge.org/template/drupal-cms" class="template-launch"><i class="fa-solid fa-rocket"></i> Demo</a>
+                <a href="https://dev-e14008-d08f4f-bol23t5d8e5q.apps-drupalforge.click/" class="template-launch"><i class="fa-solid fa-rocket"></i> Demo</a>
                 <span class="template-price">Free</span>
               </div>
             </div>
